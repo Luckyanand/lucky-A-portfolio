@@ -106,55 +106,137 @@ marketing initiatives aligned with organizational objectives.
   </div>
 </section>
 
-<!-- SKILLS -->
-<section id="skills" class="py-20">
-  <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-3xl font-bold text-center mb-12">Skills</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skills</title>
 
-    <div class="grid md:grid-cols-3 gap-8">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-200">
-        <h3 class="font-bold text-xl mb-3">SEO</h3>
-        <ul class="space-y-2">
-          <li>Leads Generation</li>
-          <li>Search Engine Optimization</li>
-          <li>Technical SEO</li>
-          <li>On-Page SEO </li>
-          <li>Off- Page SEO</li>
-          <li>Content Writting</li>
-          <li>Wordpress</li>       
-        </ul>
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* SECTION */
+.skills {
+  padding: 80px 10%;
+  background: #edd1ae;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* CARD */
+.skill-card {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+}
+
+/* ICON */
+.icon {
+  background: #1f2a44;
+  color: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  font-weight: bold;
+  min-width: 60px;
+  text-align: center;
+}
+
+/* TEXT */
+.skill-card h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.skill-card p {
+  font-size: 14px;
+  color: #555;
+  margin-top: 5px;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<section class="skills">
+  <h2>Skills</h2>
+
+  <div class="skills-container">
+
+    <!-- SEO -->
+    <div class="skill-card">
+      <div class="icon">SEO</div>
+      <div>
+        <h3>SEO</h3>
+        <p>
+          Lead Generation, Search Engine Optimization, Technical SEO,
+          On-Page SEO, Off-Page SEO, Content Writing, WordPress
+        </p>
       </div>
-
-     <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-200">
-        <h3 class="font-bold text-xl mb-3">Marketing</h3>
-        <ul class="space-y-2">
-          <li>SMO</li>
-           <li>Leads Generation</li>
-             <li>Linear Ads </li>
-           <li>Sales Navigator</li>
-            <li>Google Adwords</li>
-           <li>Facebook Ads Manager</li>
-           <li>Linkedin Marketing</li>
-           <LI>Email Marketing</LI>
-        </ul>
-      </div>
-
-     <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-200">
-        <h3 class="font-bold text-xl mb-3">Tools</h3>
-        <ul class="space-y-2">
-          <li>Google Analytics</li>
-          <li>Search Console</li>
-           <li>Lusha</li>
-          <li>Lemlist</li>
-          <li>Google Tag Manager</li>
-          <li>Mailchimp</li>
-        </ul>
-      </div>
-
     </div>
+
+    <!-- Marketing -->
+    <div class="skill-card">
+      <div class="icon">MKT</div>
+      <div>
+        <h3>Marketing</h3>
+        <p>
+          SMO, Lead Generation, Linear Ads, Sales Navigator,
+          Google Adwords, Facebook Ads Manager, LinkedIn Marketing,
+          Email Marketing
+        </p>
+      </div>
+    </div>
+
+    <!-- Tools -->
+    <div class="skill-card">
+      <div class="icon">TL</div>
+      <div>
+        <h3>Tools</h3>
+        <p>
+          Google Analytics, Search Console, Lusha, Lemlist,
+          Google Tag Manager, Mailchimp
+        </p>
+      </div>
+    </div>
+
   </div>
 </section>
+
+</body>
+</html>
 
 <section id="projects" class="py-20">
   <div class="max-w-7xl mx-auto px-6">
