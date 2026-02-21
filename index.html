@@ -1,190 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lucky Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LUCKY A | Portfolio</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<style>
-
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:'Poppins',sans-serif;
-}
-
-body{
-  background:#d9c19f;
-}
-
-/* HERO SECTION */
-.hero{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  height:100vh;  /* Important */
-  padding:0 8%;
-}
-
-/* LEFT SIDE */
-.left{
-  flex:1;
-}
-
-.left .small{
-  font-size:18px;
-  margin-bottom:20px;
-}
-
-.left h1{
-  font-size:60px;
-  font-weight:700;
-  margin-bottom:20px;
-}
-
-.left h1 span{
-  color:#d29a4a;
-}
-
-.left h3{
-  font-weight:600;
-  margin-bottom:15px;
-}
-
-.left p{
-  font-size:18px;
-  max-width:500px;
-  line-height:1.6;
-  margin-bottom:30px;
-}
-
-/* BUTTONS */
-.buttons{
-  display:flex;
-  gap:20px;
-}
-
-.btn{
-  padding:14px 28px;
-  border-radius:12px;
-  font-weight:600;
-  text-decoration:none;
-  transition:0.3s;
-}
-
-.primary{
-  background:#d29a4a;
-  color:white;
-}
-
-.primary:hover{
-  background:#b97f2e;
-}
-
-.outline{
-  border:2px solid #d29a4a;
-  color:#000;
-}
-
-.outline:hover{
-  background:#d29a4a;
-  color:white;
-}
-
-/* RIGHT SIDE */
-.right{
-  flex:1;
-  display:flex;
-  justify-content:flex-end;
-}
-
-/* CARD */
-.card{
-  background:#eeeeee;
-  width:420px;
-  padding:50px 30px;
-  border-radius:20px;
-  text-align:center;
-  box-shadow:0 20px 50px rgba(0,0,0,0.15);
-}
-
-.card img{
-  width:180px;
-  height:180px;
-  border-radius:50%;
-  border:6px solid #d29a4a;
-  object-fit:cover;
-  margin-bottom:25px;
-}
-
-.card h2{
-  margin-bottom:10px;
-}
-
-.card p{
-  color:#555;
-  margin-bottom:8px;
-}
-
-/* RESPONSIVE */
-@media(max-width:900px){
-  .hero{
-    flex-direction:column;
-    text-align:center;
-    height:auto;
-    padding:60px 8%;
-  }
-
-  .right{
-    justify-content:center;
-    margin-top:50px;
-  }
-
-  .left h1{
-    font-size:40px;
-  }
-}
-
-</style>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #EDD1AE;
+      color: black;
+    }
+  </style>
 </head>
+
 <body>
 
-<section class="hero">
+<!-- NAVBAR -->
+<header class="fixed w-full bg-white shadow-md z-50">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row md:justify-between md:items-center gap-3">
 
-  <!-- LEFT CONTENT -->
-  <div class="left">
-    <div class="small">Hi there 👋</div>
-    <h1>Hi, I'm <span>Lucky</span></h1>
-    <h3>Digital Marketing Executive</h3>
-    <p>
-      I build clean, responsive, and high-converting 
-      digital strategies that help businesses grow.
-    </p>
+    <h1 class="text-2xl font-bold text-black text-center md:text-left">
+      LUCKY A
+    </h1>
 
-    <div class="buttons">
-      <a href="#" class="btn primary">Hire Me</a>
-      <a href="#" class="btn outline">Download Resume</a>
-    </div>
+    <nav class="flex flex-wrap justify-center md:justify-end gap-4 font-medium">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
   </div>
+</header>
 
-  <!-- RIGHT CARD -->
-  <div class="right">
-    <div class="card">
-      <img src="your-image.jpg" alt="Lucky">
-      <h2>Lucky A</h2>
-      <p>Digital Marketer</p>
-      <p>Chennai</p>
+<!-- HERO -->
+<section class="pt-32 pb-20">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+
+    <!-- LEFT -->
+    <div>
+      <p class="mb-4 text-lg">Hi there 👋</p>
+
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        Hi, I'm <span class="font-extrabold">LUCKY</span>
+      </h1>
+
+      <h3 class="text-xl font-semibold mb-2">
+        DIGITAL MARKETING EXECUTIVE
+      </h3> 
+
+      <p class="mb-6">
+        I build clean, responsive, and high-converting strategies
+        that help businesses grow.
+      </p>
+      <div class="flex gap-4 flex-wrap">
+        <a href="https://www.linkedin.com/in/lucky-a-9367321b6?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="bg-black text-white px-6 py-3 rounded-xl font-semibold hover:scale-105 transition">
+        Linkedin
+        </a>
+
+        <a href="resume.pdf" target="_blank"
+          class="border-2 border-black px-6 py-3 rounded-xl font-semibold hover:bg-black hover:text-white transition">
+          Download Resume
+        </a>
+      </div>
+      </div>
     </div>
-  </div>
 
+    <!-- RIGHT CARD -->
+    <div class="flex-1 flex justify-end">
+   <div class="w-full md:w-1/2 flex justify-center">
+      <div class="bg-white p-8 rounded-2xl shadow-xl text-center w-[300px]">
+
+        <img src="profile.jpg"
+          class="w-36 h-36 mx-auto rounded-full border-4 border-[#EDD1AE] mb-4 object-cover"/>
+
+        <h3 class="text-xl font-bold">Lucky A</h3>
+        <p class="mt-2">Digital Marketer</p>
+
+        <p class="mt-4 text-sm text-gray-500">
+          Chennai
+        </p>
+
+      </div>
+    </div>
+
+  </div>
 </section>
-
-</body>
-</html>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -320,6 +226,7 @@ body {
 
             <div class="about-buttons">
         <a href="#contact" class="btn-primary">Hire Me</a>
+        <a href="resume.pdf" class="btn-outline">Download CV</a>
       </div>
     </div>
 
@@ -488,97 +395,92 @@ body {
 </body>
 </html>
 
-<section id="projects" class="py-24 bg-gray-50">
+<section id="projects" class="py-20">
   <div class="max-w-7xl mx-auto px-6">
 
-    <!-- Section Title -->
-    <h2 class="text-4xl font-bold text-center mb-16">
-      My <span class="text-amber-600">Projects</span>
-    </h2>
+    <h2 class="text-3xl font-bold text-center mb-12">Projects</h2>
 
-    <!-- Grid -->
-    <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+    <div class="grid md:grid-cols-3 gap-8">
 
       <!-- PROJECT 1 -->
-      <div class="bg-white rounded-3xl shadow-md overflow-hidden 
-                  transform transition duration-500 hover:-translate-y-4 hover:shadow-2xl">
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
 
         <div class="relative group">
-          <img src="https://image.thum.io/get/width/1200/https://www.redplanet-solutions.com/"
-               class="w-full h-60 object-cover">
+          <img src= "https://image.thum.io/get/width/1200/https://www.redplanet-solutions.com/"
+               class="w-full h-56 object-cover">
 
-          <div class="absolute inset-0 bg-black/50 flex items-center justify-center 
-                      opacity-0 group-hover:opacity-100 transition duration-300">
+          <div class="absolute inset-0 bg-black/40 flex items-center justify-center 
+                      opacity-0 group-hover:opacity-100 transition">
             <a href="https://redplanet-solutions.com/" target="_blank"
-               class="bg-white text-black px-6 py-2 rounded-full font-semibold hover:bg-amber-500 hover:text-white transition">
+               class="bg-white text-black px-5 py-2 rounded-lg font-semibold">
                View Website
             </a>
           </div>
         </div>
 
-        <div class="p-6 text-center">
-          <h3 class="font-bold text-xl">RedPlanet Spatial Solutions</h3>
-          <p class="text-gray-500 text-sm mt-2">
-            GIS & Digital Marketing Project
+        <div class="p-5 text-center">
+          <h3 class="font-bold text-lg">RedPlanet Spatial Solutions</h3>
+          <p class="text-gray-600 text-sm mt-1">
+            Real Estate & Digital Marketing Project
           </p>
         </div>
+
       </div>
 
-
       <!-- PROJECT 2 -->
-      <div class="bg-white rounded-3xl shadow-md overflow-hidden 
-                  transform transition duration-500 hover:-translate-y-4 hover:shadow-2xl">
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
 
         <div class="relative group">
-          <img src="https://image.thum.io/get/width/1200/https://www.fujielectric.com/"
-               class="w-full h-60 object-cover">
+          <img src="https://image.thum.io/get/width/800/https://www.fujielectric.com/"
+               class="w-full h-56 object-cover">
 
-          <div class="absolute inset-0 bg-black/50 flex items-center justify-center 
-                      opacity-0 group-hover:opacity-100 transition duration-300">
+          <div class="absolute inset-0 bg-black/40 flex items-center justify-center 
+                      opacity-0 group-hover:opacity-100 transition">
             <a href="https://www.fujielectric.com/" target="_blank"
-               class="bg-white text-black px-6 py-2 rounded-full font-semibold hover:bg-amber-500 hover:text-white transition">
+               class="bg-white text-black px-5 py-2 rounded-lg font-semibold">
                View Website
             </a>
           </div>
         </div>
 
-        <div class="p-6 text-center">
-          <h3 class="font-bold text-xl">Fuji Electric</h3>
-          <p class="text-gray-500 text-sm mt-2">
+        <div class="p-5 text-center">
+          <h3 class="font-bold text-lg">Fuji Electric</h3>
+          <p class="text-gray-600 text-sm mt-1">
             Industrial & Energy Solutions Website
           </p>
         </div>
+
       </div>
 
-
       <!-- PROJECT 3 -->
-      <div class="bg-white rounded-3xl shadow-md overflow-hidden 
-                  transform transition duration-500 hover:-translate-y-4 hover:shadow-2xl">
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
 
         <div class="relative group">
-          <img src="https://image.thum.io/get/width/1200/https://mymedicalshop.com/"
-               class="w-full h-60 object-cover">
+          <img src="https://image.thum.io/get/width/800/https://mymedicalshop.com/"
+               class="w-full h-56 object-cover">
 
-          <div class="absolute inset-0 bg-black/50 flex items-center justify-center 
-                      opacity-0 group-hover:opacity-100 transition duration-300">
+          <div class="absolute inset-0 bg-black/40 flex items-center justify-center 
+                      opacity-0 group-hover:opacity-100 transition">
             <a href="https://mymedicalshop.com/" target="_blank"
-               class="bg-white text-black px-6 py-2 rounded-full font-semibold hover:bg-amber-500 hover:text-white transition">
+               class="bg-white text-black px-5 py-2 rounded-lg font-semibold">
                View Website
             </a>
           </div>
         </div>
 
-        <div class="p-6 text-center">
-          <h3 class="font-bold text-xl">My Medical Shop</h3>
-          <p class="text-gray-500 text-sm mt-2">
+        <div class="p-5 text-center">
+          <h3 class="font-bold text-lg">My Medical Shop</h3>
+          <p class="text-gray-600 text-sm mt-1">
             E-commerce Medical Platform
           </p>
         </div>
+
       </div>
 
     </div>
   </div>
 </section>
+
 
 <!-- EXPERIENCE -->
 <section id="experience">
@@ -591,6 +493,7 @@ body {
       <div class="exp-card">
         <h3>RedPlanet Spatial Solutions Pvt Ltd</h3>
         <span>Digital Marketing Executive - 2</span>
+        <p class="date">July 2023 - Jan 2024</p>
         <p class="date">March 2024 - Present</p>
         <p>
           Promoted for strong performance. Managed end-to-end digital marketing 
@@ -603,6 +506,7 @@ body {
       <div class="exp-card">
         <h3>Fuji Electric India Pvt Ltd</h3>
         <span>Digital Marketing Executive</span>
+        <p class="date">March 2024 - Present</p>
         <p class="date">July 2023 - Jan 2024</p>
         <p>
           Managed and optimized paid campaigns across Google Ads, Facebook, and Instagram. 
