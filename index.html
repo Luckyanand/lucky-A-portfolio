@@ -109,17 +109,23 @@ body {
 
 /* ABOUT SECTION */
 .about {
-  padding: 60px 10%;
+  padding: 60px 20px; /* FIXED */
 }
 
 .about-container {
+  max-width: 1100px;   /* CENTER FIX */
+  margin: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.2fr 1fr; /* BETTER BALANCE */
   gap: 30px;
   align-items: center;
 }
 
 /* LEFT TEXT */
+.about-text {
+  max-width: 500px;
+}
+
 .about-text h2 {
   font-size: 34px;
   margin-bottom: 20px;
@@ -184,6 +190,10 @@ body {
   .about-container {
     grid-template-columns: 1fr;
   }
+
+  .about-text {
+    max-width: 100%;
+  }
 }
 </style>
 
@@ -213,6 +223,12 @@ body {
         drive measurable business growth.
       </p>
 
+      <div class="about-buttons">
+        <a href="#contact" class="btn-primary">Hire Me</a>
+        <a href="#" class="btn-outline">Download CV</a>
+      </div>
+    </div>
+
     <!-- RIGHT -->
     <div class="about-cards">
 
@@ -240,6 +256,9 @@ body {
 
   </div>
 </section>
+
+</body>
+</html>
 
 </body>
 </html>
@@ -463,56 +482,119 @@ body {
 
 
 <!-- EXPERIENCE -->
-<section id="experience" class="py-20">
-  <div class="max-w-5xl mx-auto px-6">
-    <h2 class="text-3xl font-bold text-center mb-12">Experience</h2>
+<section id="experience">
+  <div class="container">
+    <h2>Experience</h2>
 
-<div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-200">
-  <h3 class="text-2xl font-bold">RedPlanet Spatial Solutions Private Limited
-Digital Marketing Executive - 2</h3>
-      <p class="mt-2">July 2023 - Jan 2024</p>
+    <div class="experience-grid">
 
-      <ul class="list-disc pl-6 mt-4 space-y-2">
-        <p>Promoted to Executive-2 for strong performance, I independently managed end-to-end digital marketing including Google Ads, Meta Ads, SEO, Email, LinkedIn, and WhatsApp marketing, along with WordPress website management, lead generation, automated outreach, campaign reporting, content creation, video editing, LinkedIn growth, and tender submissions.SEO</p>
-   <h3 class="text-2xl font-bold">Fuji Electric India Private Limited - Digital Marketing Executive</h3>
-      <p class="mt-2">March 2024- Present</p>
+      <!-- EXPERIENCE 1 -->
+      <div class="exp-card">
+        <h3>RedPlanet Spatial Solutions Pvt Ltd</h3>
+        <span>Digital Marketing Executive - 2</span>
+        <p class="date">July 2023 - Jan 2024</p>
+        <p>
+          Promoted for strong performance. Managed end-to-end digital marketing 
+          including Google Ads, Meta Ads, SEO, Email Marketing, LinkedIn growth, 
+          WordPress, lead generation, automation, and campaign reporting.
+        </p>
+      </div>
 
-      <ul class="list-disc pl-6 mt-4 space-y-2">
-        <p>Managed and optimized paid campaigns on Google Ads, Facebook, and Instagram for better ROI, collaborated with creative, IT, and social teams to align strategies, created and scheduled engaging social media content, handled tender platforms for new projects, optimized website content using HubSpot, and analyzed performance using Google Analytics and Search Console.</p>
-    <h3 class="text-2xl font-bold">My Medical Shop - Digital Marketing Executive </h3>
-      <p class="mt-2">June 2022 - July 2023</p>
+      <!-- EXPERIENCE 2 -->
+      <div class="exp-card">
+        <h3>Fuji Electric India Pvt Ltd</h3>
+        <span>Digital Marketing Executive</span>
+        <p class="date">March 2024 - Present</p>
+        <p>
+          Managed and optimized paid campaigns across Google Ads, Facebook, and Instagram. 
+          Collaborated with teams, handled HubSpot website optimization, and analyzed 
+          performance using Analytics and Search Console.
+        </p>
+      </div>
 
-      <ul class="list-disc pl-6 mt-4 space-y-2">
-        <p>Generated leads for wholesale businesses across multiple industries
+      <!-- EXPERIENCE 3 -->
+      <div class="exp-card">
+        <h3>My Medical Shop</h3>
+        <span>Digital Marketing Executive</span>
+        <p class="date">June 2022 - July 2023</p>
+        <p>
+          Generated leads for multiple industries, managed PPC campaigns, handled social media, 
+          created SEO content, and achieved 50K+ app installs through Google Ads.
+        </p>
+      </div>
 
-Managed PPC campaigns for multiple organizations
-
-Handled and managed social media platforms across various niches
-
-Created SEO-friendly content for blogs, social media, email marketing, and push notifications
-
-Achieved 50K+ app installations through Google Ads campaigns.</p>
-      </ul>
     </div>
-  </div>
-
-<!-- CONTACT -->
-<section id="contact" class="py-20 text-center">
-  <div class="max-w-4xl mx-auto px-6">
-
-    <h2 class="text-3xl font-bold mb-6">Contact</h2>
-
-    <div class="bg-white p-8 rounded-2xl shadow-lg">
-      <p><strong>Email:</strong> luckysanands@gmail.com</p>
-      <p class="mt-2"><strong>Location:</strong> Chennai</p>
-
-      <a href="#" class="inline-block mt-6 bg-black text-white px-6 py-3 rounded-xl">
-        Connect
-      </a>
-    </div>
-
   </div>
 </section>
+
+<style>
+/* EXPERIENCE SECTION */
+#experience {
+  padding: 80px 20px;
+  background: #edd1ae;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+#experience h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.experience-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+
+/* CARD */
+.exp-card {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.exp-card:hover {
+  transform: translateY(-5px);
+}
+
+.exp-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.exp-card span {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin-top: 5px;
+}
+
+.date {
+  font-size: 13px;
+  color: #888;
+  margin: 8px 0 12px;
+}
+
+.exp-card p {
+  line-height: 1.6;
+  color: #444;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+  .experience-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+</style>
 
 <!-- FOOTER -->
 <footer class="bg-black text-white text-center py-6">
