@@ -91,21 +91,158 @@
   </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about" class="py-20 text-center">
-  <div class="max-w-5xl mx-auto px-6">
-    <h2 class="text-3xl font-bold mb-6">About Me</h2>
-    <p class="text-lg leading-relaxed">
-     Results-driven digital marketing executive with over four years of experience in developing and
-executing high-impact digital campaigns. Expertise in Google Ads, Facebook Ads, Instagram Ads,
-and SEO, with a proven ability to enhance campaign performance and maximize ROI. Adept at
-leveraging data analytics to refine strategies, optimize audience targeting, and drive measurable
-business growth. Skilled in cross-functional collaboration, ensuring seamless execution of
-marketing initiatives aligned with organizational objectives.
-    </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #edd1ae;
+}
+
+/* ABOUT SECTION */
+.about {
+  padding: 80px 10%;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+/* LEFT TEXT */
+.about-text h2 {
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* BUTTONS */
+.about-buttons {
+  margin-top: 25px;
+}
+
+.btn-primary {
+  background: black;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 12px;
+  text-decoration: none;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.btn-outline {
+  border: 2px solid black;
+  padding: 12px 24px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: black;
+}
+
+/* RIGHT CARDS */
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.about-card {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+}
+
+.about-card h3 {
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+</head>
+
+<body>
+
+<section class="about">
+  <div class="about-container">
+
+    <!-- LEFT -->
+    <div class="about-text">
+      <h2>About Me</h2>
+
+      <p>
+        Results-driven Digital Marketing Executive with over 4 years of experience 
+        in developing and executing high-performance campaigns.
+      </p>
+
+      <p>
+        Expertise in Google Ads, Facebook Ads, Instagram Ads, and SEO, with a strong 
+        focus on improving campaign performance and maximizing ROI.
+      </p>
+
+      <p>
+        Skilled in data analysis, audience targeting, and strategy optimization to 
+        drive measurable business growth.
+      </p>
+
+    <!-- RIGHT -->
+    <div class="about-cards">
+
+      <div class="about-card">
+        <h3>4+</h3>
+        <p>Years Experience</p>
+      </div>
+
+      <div class="about-card">
+        <h3>50K+</h3>
+        <p>Leads Generated</p>
+      </div>
+
+      <div class="about-card">
+        <h3>100+</h3>
+        <p>Campaigns Managed</p>
+      </div>
+
+      <div class="about-card">
+        <h3>SEO</h3>
+        <p>Expert Level</p>
+      </div>
+
+    </div>
+
   </div>
 </section>
 
+</body>
+</html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
